@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HQMS</string>
+
+    <string name="otp_header">OTP is sent to your mobile number.Enter OTP code below.</string>
+</resources>

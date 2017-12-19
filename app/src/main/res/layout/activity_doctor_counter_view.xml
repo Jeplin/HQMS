@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jeplin.hackathonqm.DoctorCounterView">
+
+    <ProgressBar
+        android:id="@+id/loader_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TableLayout
+        android:id="@+id/tbl_Table"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txt_hi_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hi,Doctor"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:paddingLeft="5dp"
+                android:layout_span="2"
+                android:layout_weight="2"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:layout_marginTop="-8dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appoitment Status :"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txt_curr_token"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 / 55"
+                android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Detail  "
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_weight="2"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txt_patientname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Name :"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/txt_patient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txt_department_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department Name :"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/txt_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txt_mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number :"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/txt_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="901212121"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txt_RoomNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room :"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/txt_Room_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txt_Floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Floor :"
+                android:paddingLeft="5dp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/txt_floor_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txt_email_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email ID :"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email@gm.com"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:weightSum="2">
+
+            <EditText android:id="@+id/txt_Response"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="top|left"
+                      android:inputType="textEmailAddress|textMultiLine"
+                      android:lines="5"
+                      android:focusableInTouchMode="true"
+                      android:minLines="2"
+                      android:padding="7dp"
+                      android:hint="Patient Record"
+                      android:scrollHorizontally="false"
+                      android:scrollbars="vertical"
+                      android:layout_weight="2"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SKIP"
+                android:onClick="skipBtnMethod"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="nextBtnMethod"
+                android:text="NEXT"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:textStyle="bold"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:weightSum="2">
+            <Button
+                android:layout_width="wrap_content"
+                android:text="EXIT"
+                android:textStyle="bold"
+                android:padding="20dp"
+                android:onClick="exitBtnMethod"
+                android:layout_weight="2"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

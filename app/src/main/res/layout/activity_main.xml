@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.jeplin.hackathonqm.MainActivity">
+
+    <TableLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+        <TableRow android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:text="12-23-2012"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15dp">
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:text="12:30"
+                android:textAlignment="center"
+                android:textSize="70dp"
+                android:textStyle="bold"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-12dp">
+
+            <TextView
+                android:id="@+id/txt_timeAM"
+                android:text="AM"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_header"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@drawable/queue_management"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp">
+
+            <Button
+                android:id="@+id/btnDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="doctorBtnClicked"
+                android:text="DOCTOR"
+                android:padding="20dp"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="-30dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp">
+
+            <Button
+                android:id="@+id/btnPatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="patientBtnClicked"
+                android:text="Patient"
+                android:padding="20dp"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="-30dp"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
